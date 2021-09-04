@@ -1,4 +1,4 @@
-package main
+package fhc_qualification_2021
 
 import (
 	"fmt"

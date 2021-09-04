@@ -1,4 +1,4 @@
-package main
+package fhc_qualification_2021
 
 import (
 	"bufio"
@@ -124,7 +124,3 @@ func ProblemA2(r io.Reader, w io.Writer) {
 		fmt.Fprintf(out, "Case #%d: %d\n", caseNo, currentSteps)
 	}
 }
-
-// func main() {
-// 	ProblemA2(os.Stdin, os.Stdout)
-// }
