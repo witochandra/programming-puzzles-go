@@ -61,3 +61,15 @@ func TestProblemA2_Submission(t *testing.T) {
 	os.WriteFile("./problem_a_2_submission_output.txt", []byte(writer.String()), 0644)
 	// assert.Equal(t, string(expected), writer.String())
 }
+
+func TestProblemA2_Practice(t *testing.T) {
+	input, _ := os.ReadFile("./problem_a_2_practice_input.txt")
+	// expected, _ := os.ReadFile("./problem_a_2_practice_output.txt")
+	reader := strings.NewReader(string(input))
+	writer := &strings.Builder{}
+
+	ProblemA2(reader, writer)
+
+	os.WriteFile("./problem_a_2_practice_output.txt", []byte(writer.String()), 0644)
+	// assert.Equal(t, string(expected), writer.String())
+}
