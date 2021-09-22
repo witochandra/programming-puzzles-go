@@ -1,7 +1,6 @@
 package fhc_qualification_2021
 
 import (
-	"fmt"
 	"strings"
 	"testing"
 
@@ -56,7 +55,6 @@ Case #6: 10
 	reader := strings.NewReader(strings.TrimSpace(input))
 	writer := &strings.Builder{}
 
-	fmt.Println(strings.TrimSpace(input))
 	ProblemC1(reader, writer)
 
 	assert.Equal(t, strings.TrimSpace(expected), strings.TrimSpace(writer.String()))
