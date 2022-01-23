@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestProblem2021Day1_Example(t *testing.T) {
+func TestProblem2021Day01_Example(t *testing.T) {
 	input := strings.TrimSpace(`
 199
 200
@@ -27,7 +27,7 @@ func TestProblem2021Day1_Example(t *testing.T) {
 		reader := strings.NewReader(input)
 		writer := &strings.Builder{}
 
-		Problem2021Day1Part1(reader, writer)
+		Problem2021Day01Part1(reader, writer)
 
 		assert.Equal(t, expected, strings.TrimSpace(writer.String()))
 	})
@@ -37,14 +37,14 @@ func TestProblem2021Day1_Example(t *testing.T) {
 		reader := strings.NewReader(input)
 		writer := &strings.Builder{}
 
-		Problem2021Day1Part2(reader, writer)
+		Problem2021Day01Part2(reader, writer)
 
 		assert.Equal(t, expected, strings.TrimSpace(writer.String()))
 	})
 }
 
-func TestProblem2021Day1_Puzzle(t *testing.T) {
-	input, err := os.ReadFile("day1_input.txt")
+func TestProblem2021Day01_Puzzle(t *testing.T) {
+	input, err := os.ReadFile("day01_input.txt")
 	if err != nil {
 		t.Error(err)
 		return
@@ -55,7 +55,7 @@ func TestProblem2021Day1_Puzzle(t *testing.T) {
 		reader := strings.NewReader(strings.TrimSpace(string(input)))
 		writer := &strings.Builder{}
 
-		Problem2021Day1Part1(reader, writer)
+		Problem2021Day01Part1(reader, writer)
 
 		assert.Equal(t, expected, strings.TrimSpace(writer.String()))
 	})
@@ -65,7 +65,7 @@ func TestProblem2021Day1_Puzzle(t *testing.T) {
 		reader := strings.NewReader(strings.TrimSpace(string(input)))
 		writer := &strings.Builder{}
 
-		Problem2021Day1Part2(reader, writer)
+		Problem2021Day01Part2(reader, writer)
 
 		assert.Equal(t, expected, strings.TrimSpace(writer.String()))
 	})

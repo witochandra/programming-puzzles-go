@@ -6,7 +6,7 @@ import (
 	"io"
 )
 
-func Problem2021Day1Part1(r io.Reader, w io.Writer) {
+func Problem2021Day01Part1(r io.Reader, w io.Writer) {
 	in := bufio.NewReader(r)
 	out := bufio.NewWriter(w)
 	defer out.Flush()
@@ -32,7 +32,7 @@ func Problem2021Day1Part1(r io.Reader, w io.Writer) {
 	fmt.Fprintln(out, increments)
 }
 
-func Problem2021Day1Part2(r io.Reader, w io.Writer) {
+func Problem2021Day01Part2(r io.Reader, w io.Writer) {
 	in := bufio.NewReader(r)
 	out := bufio.NewWriter(w)
 	defer out.Flush()
