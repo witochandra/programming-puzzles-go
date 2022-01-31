@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func Problem2021Day04(r io.Reader, w io.Writer, part int) {
+func Problem2021Day04(r io.Reader, w io.Writer, findLastWinning bool) {
 	type Board struct {
 		Numbers      []int
 		MarksByIndex map[int]bool
@@ -95,7 +95,6 @@ func Problem2021Day04(r io.Reader, w io.Writer, part int) {
 	for {
 		_, err := in.Peek(1)
 		if err != nil {
-			fmt.Println(err)
 			break
 		}
 		fmt.Fscanln(in)
@@ -138,12 +137,18 @@ func Problem2021Day04(r io.Reader, w io.Writer, part int) {
 		}
 		return -1
 	}
-	if part == 1 {
-		score = findFirstWinningBoardScore()
-	} else if part == 2 {
+	if findLastWinning {
 		score = findLastWinningBoardScore()
 	} else {
-		panic("invalid part")
+		score = findFirstWinningBoardScore()
 	}
 	fmt.Fprintln(out, score)
+}
+
+func Problem2021Day04Part1(r io.Reader, w io.Writer) {
+	Problem2021Day04(r, w, false)
+}
+
+func Problem2021Day04Part2(r io.Reader, w io.Writer) {
+	Problem2021Day04(r, w, true)
 }

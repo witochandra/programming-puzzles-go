@@ -36,7 +36,7 @@ func TestProblem2021Day04_Example(t *testing.T) {
 		reader := strings.NewReader(input)
 		writer := &strings.Builder{}
 
-		Problem2021Day04(reader, writer, 1)
+		Problem2021Day04Part1(reader, writer)
 
 		assert.Equal(t, expected, strings.TrimSpace(writer.String()))
 	})
@@ -46,7 +46,7 @@ func TestProblem2021Day04_Example(t *testing.T) {
 		reader := strings.NewReader(input)
 		writer := &strings.Builder{}
 
-		Problem2021Day04(reader, writer, 2)
+		Problem2021Day04Part2(reader, writer)
 
 		assert.Equal(t, expected, strings.TrimSpace(writer.String()))
 	})
@@ -65,7 +65,7 @@ func TestProblem2021Day04_Puzzle(t *testing.T) {
 		reader := strings.NewReader(input)
 		writer := &strings.Builder{}
 
-		Problem2021Day04(reader, writer, 1)
+		Problem2021Day04Part1(reader, writer)
 
 		assert.Equal(t, expected, strings.TrimSpace(writer.String()))
 	})
@@ -75,7 +75,7 @@ func TestProblem2021Day04_Puzzle(t *testing.T) {
 		reader := strings.NewReader(input)
 		writer := &strings.Builder{}
 
-		Problem2021Day04(reader, writer, 2)
+		Problem2021Day04Part2(reader, writer)
 
 		assert.Equal(t, expected, strings.TrimSpace(writer.String()))
 	})
