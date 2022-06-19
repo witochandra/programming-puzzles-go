@@ -46,6 +46,18 @@ func TestProblem2021Day10(t *testing.T) {
 			want:  "168417",
 			eval:  Problem2021Day10Part1,
 		},
+		{
+			name:  "part 2 example",
+			input: example,
+			want:  "288957",
+			eval:  Problem2021Day10Part2,
+		},
+		{
+			name:  "part 2 puzzle",
+			input: puzzle,
+			want:  "2802519786",
+			eval:  Problem2021Day10Part2,
+		},
 	}
 	for _, tc := range testCases {
 		t.Run(tc.name, func(t *testing.T) {
