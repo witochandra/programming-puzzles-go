@@ -69,6 +69,6 @@ func TestProblem2022Day07_Puzzle(t *testing.T) {
 
 		Problem2022Day07Part2(strings.NewReader(input), writer)
 
-		assert.Equal(t, "TZLTLWRNF", writer.String())
+		assert.Equal(t, "2940614", writer.String())
 	})
 }
