@@ -42,7 +42,7 @@ func TestProblem2023Day01_Part2(t *testing.T) {
 		assert.Equal(t, expected, writer.String())
 	})
 	t.Run("puzzle", func(t *testing.T) {
-		expected := "142"
+		expected := "57345"
 
 		reader := strings.NewReader(ReadFile("./day01_puzzle.txt"))
 		writer := &strings.Builder{}
